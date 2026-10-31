@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Dr. Kenneth Dilger II Family Dentistry | Evansville, IN</title>
+<meta name="description" content="Gentle, thorough family dentistry on Lincoln Avenue in Evansville, Indiana. Call (812) 477-2122.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f6f1e7;
+    --paper-2:#efe7d6;
+    --ink:#1f2a24;
+    --ink-soft:#4a564f;
+    --pine:#1e4a3a;
+    --pine-2:#2c6450;
+    --clay:#c8643b;
+    --clay-soft:#f1d9c9;
+    --line:#d9cfba;
+    --radius:18px;
+    --display:"Fraunces", Georgia, serif;
+    --body:"Figtree", "Segoe UI", sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.35;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.4 0 0 0 0 0.35 0 0 0 0 0.25 0 0 0 .12 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  a{color:inherit}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+
+  /* demo notice */
+  .demo{background:var(--ink);color:#e9e3d6;font-size:13px;text-align:center;padding:8px 16px;letter-spacing:.01em}
+  .demo b{color:#fff;font-weight:600}
+
+  /* header */
+  header{position:sticky;top:0;z-index:50;background:rgba(246,241,231,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:24px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .brand svg{flex:none}
+  .brand-name{font-family:var(--display);font-size:20px;font-weight:600;line-height:1.1}
+  .brand-name small{display:block;font-family:var(--body);font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+  .links{display:flex;gap:28px;list-style:none;font-size:15px;font-weight:500}
+  .links a{text-decoration:none;color:var(--ink-soft);transition:color .2s}
+  .links a:hover{color:var(--pine)}
+  .btn{display:inline-flex;align-items:center;gap:8px;border:0;cursor:pointer;font:600 15px var(--body);text-decoration:none;border-radius:999px;padding:13px 22px;transition:transform .2s, background .2s, box-shadow .2s}
+  .btn-pine{background:var(--pine);color:#fff;box-shadow:0 6px 18px -8px rgba(30,74,58,.7)}
+  .btn-pine:hover{background:var(--pine-2);transform:translateY(-2px)}
+  .btn-ghost{border:1.5px solid var(--ink);color:var(--ink);background:transparent}
+  .btn-ghost:hover{background:var(--ink);color:var(--paper)}
+
+  /* hero */
+  .hero{position:relative;padding:72px 0 96px;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--clay)}
+  .eyebrow::before{content:"";width:28px;height:1.5px;background:var(--clay)}
+  h1{font-family:var(--display);font-weight:400;font-size:clamp(44px,6.4vw,84px);line-height:.98;letter-spacing:-.025em;margin:22px 0 26px}
+  h1 em{font-style:italic;color:var(--pine)}
+  .lede{font-size:19px;color:var(--ink-soft);max-width:31em}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+  .proof{display:flex;align-items:center;gap:14px;margin-top:40px;font-size:14px;color:var(--ink-soft)}
+  .stars{color:var(--clay);letter-spacing:2px;font-size:16px}
+  .proof strong{color:var(--ink);font-size:15px}
+
+  .hero-card{position:relative;background:var(--pine);color:#eef3ef;border-radius:28px;padding:36px 34px;box-shadow:0 40px 80px -40px rgba(30,74,58,.8);transform:rotate(1.2deg)}
+  .hero-card::after{content:"";position:absolute;inset:10px;border:1px dashed rgba(255,255,255,.22);border-radius:20px;pointer-events:none}
+  .status{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;background:rgba(255,255,255,.1);padding:6px 12px;border-radius:999px}
+  .dot{width:8px;height:8px;border-radius:50%;background:#9bb5a8}
+  .dot.open{background:#7ee0a5;box-shadow:0 0 0 4px rgba(126,224,165,.2)}
+  .hero-card h3{font-family:var(--display);font-weight:400;font-size:28px;margin:18px 0 6px}
+  .hours{list-style:none;margin-top:18px;font-size:15px}
+  .hours li{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+  .hours li:last-child{border:0}
+  .hours li.today{color:#fff;font-weight:600}
+  .hours li.today span:first-child::after{content:" · today";font-weight:400;color:#bcd3c7;font-size:13px}
+  .hero-card .phone{display:block;margin-top:22px;font-family:var(--display);font-size:30px;text-decoration:none;color:#fff}
+  .hero-card .addr{font-size:14px;color:#bcd3c7}
+
+  .tooth-bg{position:absolute;right:-120px;top:-60px;width:520px;opacity:.07;pointer-events:none}
+
+  /* reveal */
+  .rise{opacity:0;transform:translateY(22px);animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+  .d1{animation-delay:.08s}.d2{animation-delay:.2s}.d3{animation-delay:.32s}.d4{animation-delay:.44s}.d5{animation-delay:.6s}
+  @keyframes rise{to{opacity:1;transform:none}}
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* marquee of what patients say */
+  .tags{background:var(--clay);color:#fff8f2;overflow:hidden;padding:16px 0;border-block:1px solid #a9502d}
+  .tags-track{display:flex;gap:48px;width:max-content;animation:slide 38s linear infinite;font-family:var(--display);font-style:italic;font-size:22px;white-space:nowrap}
+  .tags-track span::after{content:"✦";font-style:normal;margin-left:48px;font-size:14px;vertical-align:middle;opacity:.7}
+  @keyframes slide{to{transform:translateX(-50%)}}
+
+  section{padding:110px 0}
+  .sec-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
+  h2{font-family:var(--display);font-weight:400;font-size:clamp(34px,4.4vw,56px);line-height:1.04;letter-spacing:-.02em}
+  h2 em{font-style:italic;color:var(--clay)}
+  .sec-head p{color:var(--ink-soft);font-size:18px;max-width:30em}
+
+  /* services */
+  .services{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+  .svc{padding:34px 30px 38px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);position:relative;transition:background .3s}
+  .svc:hover{background:var(--paper-2)}
+  .svc .num{font-family:var(--display);font-size:14px;color:var(--clay);letter-spacing:.08em}
+  .svc h3{font-family:var(--display);font-weight:600;font-size:24px;margin:14px 0 10px}
+  .svc p{color:var(--ink-soft);font-size:16px}
+
+  /* doctor */
+  .doctor{background:var(--paper-2)}
+  .doc-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
+  .portrait{aspect-ratio:4/5;border-radius:200px 200px 24px 24px;background:
+      radial-gradient(circle at 50% 38%, #e8d6c3 0 18%, transparent 18.5%),
+      radial-gradient(ellipse at 50% 100%, var(--pine) 0 46%, transparent 46.5%),
+      linear-gradient(160deg,#d9c6ae,#c7ae92);position:relative;overflow:hidden;box-shadow:0 30px 60px -30px rgba(31,42,36,.5)}
+  .portrait::after{content:"Photo of Dr. Dilger goes here";position:absolute;left:0;right:0;bottom:18px;text-align:center;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.8)}
+  .doc-grid blockquote{font-family:var(--display);font-size:clamp(24px,2.6vw,32px);line-height:1.3;font-style:italic;margin:26px 0;color:var(--pine)}
+  .doc-grid p{color:var(--ink-soft);margin-bottom:16px}
+  .facts{display:flex;gap:40px;margin-top:30px;padding-top:26px;border-top:1px solid var(--line)}
+  .facts div{font-size:14px;color:var(--ink-soft)}
+  .facts b{display:block;font-family:var(--display);font-weight:600;font-size:34px;color:var(--ink);line-height:1.1}
+
+  /* reviews */
+  .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .review{background:#fffaf1;border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px;display:flex;flex-direction:column;gap:18px;transition:transform .3s, box-shadow .3s}
+  .review:nth-child(2){transform:translateY(28px)}
+  .review:hover{box-shadow:0 24px 40px -28px rgba(31,42,36,.5)}
+  .review p{font-family:var(--display);font-size:21px;line-height:1.4}
+  .review footer{margin-top:auto;font-size:13px;color:var(--ink-soft);display:flex;justify-content:space-between}
+  .g-note{margin-top:60px;text-align:center;font-size:14px;color:var(--ink-soft)}
+
+  /* booking */
+  .book{background:var(--pine);color:#eef3ef;position:relative;overflow:hidden}
+  .book h2 em{color:#f3b896}
+  .book-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+  .book p.lead{color:#c3d6cc;font-size:18px;margin:20px 0 30px;max-width:28em}
+  .steps{list-style:none;counter-reset:s}
+  .steps li{counter-increment:s;display:flex;gap:16px;padding:14px 0;border-top:1px solid rgba(255,255,255,.14);color:#dbe7e0}
+  .steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--display);color:#f3b896;min-width:28px}
+  form{background:var(--paper);color:var(--ink);border-radius:24px;padding:34px;display:grid;grid-template-columns:1fr 1fr;gap:16px;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+  label{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;letter-spacing:.02em}
+  label.full{grid-column:1/-1}
+  input,select,textarea{font:400 16px var(--body);color:var(--ink);background:#fffaf1;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;outline:none;transition:border-color .2s, box-shadow .2s}
+  input:focus,select:focus,textarea:focus{border-color:var(--pine);box-shadow:0 0 0 4px rgba(30,74,58,.12)}
+  textarea{resize:vertical;min-height:90px}
+  form .btn{grid-column:1/-1;justify-content:center;padding:16px}
+  .form-note{grid-column:1/-1;font-size:12px;color:var(--ink-soft);text-align:center}
+  .thanks{grid-column:1/-1;text-align:center;padding:30px 10px;display:none}
+  .thanks h3{font-family:var(--display);font-size:30px;font-weight:400;margin-bottom:8px;color:var(--pine)}
+
+  /* visit */
+  .visit-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:stretch}
+  .visit-info dl{display:grid;gap:26px;margin-top:30px}
+  .visit-info dt{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--clay);margin-bottom:4px}
+  .visit-info dd{font-size:18px}
+  .visit-info dd a{text-decoration:none;border-bottom:1.5px solid var(--clay-soft)}
+  .map{border-radius:24px;overflow:hidden;border:1px solid var(--line);min-height:380px;display:flex}
+  .map iframe{flex:1;width:100%;min-height:380px;border:0;filter:sepia(.25) saturate(.85)}
+
+  footer.site{background:var(--ink);color:#bfc7c1;padding:48px 0 36px;font-size:14px}
+  .foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  .foot .brand-name{color:#fff}
+  .foot .brand-name small{color:#8f9a93}
+
+  /* mobile call bar */
+  .callbar{display:none}
+
+  @media (max-width:900px){
+    .links{display:none}
+    .hero{padding:48px 0 72px}
+    .hero-grid,.doc-grid,.book-grid,.visit-grid,.sec-head{grid-template-columns:1fr}
+    .hero-grid{gap:44px}
+    .hero-card{transform:none}
+    .services{grid-template-columns:1fr}
+    .reviews{grid-template-columns:1fr}
+    .review:nth-child(2){transform:none}
+    .doc-grid{gap:40px}
+    .portrait{max-width:360px}
+    section{padding:80px 0}
+    form{grid-template-columns:1fr;padding:24px}
+    .facts{gap:24px;flex-wrap:wrap}
+    .nav .btn{display:none}
+    .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;gap:10px}
+    .callbar a{flex:1;justify-content:center}
+    footer.site{padding-bottom:96px}
+  }
+  @media (max-width:480px){
+    .wrap{padding:0 16px}
+    body{font-size:16px}
+    .lede{font-size:17px}
+    .brand-name{font-size:17px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .rise,.reveal{animation:none;opacity:1;transform:none;transition:none}
+    .tags-track{animation:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="demo"><b>Concept preview</b> prepared by WiseTech for Dr. Dilger's office. This is not the practice's official website.</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Dr. Kenneth Dilger II Family Dentistry, home">
+      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#1e4a3a"/><path d="M13 13.5c2.3-1.8 4.6-.9 7 0 2.4-.9 4.7-1.8 7 0 2 1.6 1.6 5 .6 8-.9 2.6-1.2 6.4-2.8 6.9-1.7.5-1.8-4.6-4.8-4.6s-3.1 5.1-4.8 4.6c-1.6-.5-1.9-4.3-2.8-6.9-1-3-1.4-6.4.6-8z" fill="#f6f1e7"/></svg>
+      <span class="brand-name">Dr. Kenneth Dilger II<small>Family Dentistry</small></span>
+    </a>
+    <ul class="links">
+      <li><a href="#care">Care</a></li>
+      <li><a href="#doctor">Dr. Dilger</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn btn-pine" href="#book">Request a visit</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <svg class="tooth-bg" viewBox="0 0 100 100" aria-hidden="true"><path d="M22 18c11-9 21-4 28 0 7-4 17-9 28 0 9 8 7 24 3 38-4 13-6 32-13 34-8 2-8-22-18-22S40 92 32 90c-7-2-9-21-13-34-4-14-6-30 3-38z" fill="#1e4a3a"/></svg>
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow rise d1">Lincoln Avenue · Evansville, Indiana</span>
+        <h1 class="rise d2">Gentle, thorough dentistry <em>for the whole family.</em></h1>
+        <p class="lede rise d3">A neighborhood practice where the doctor takes the time to explain your options, and the team greets you by name. No rushing, no pressure, just honest care.</p>
+        <div class="cta-row rise d4">
+          <a class="btn btn-pine" href="#book">Request an appointment →</a>
+          <a class="btn btn-ghost" href="tel:+18124772122">Call (812) 477-2122</a>
+        </div>
+        <div class="proof rise d5">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span><strong>4.9 on Google</strong> · 145 patient reviews</span>
+        </div>
+      </div>
+
+      <aside class="hero-card rise d4" aria-label="Office hours">
+        <span class="status"><span class="dot" id="dot"></span><span id="status">Checking hours…</span></span>
+        <h3>Office hours</h3>
+        <ul class="hours" id="hours">
+          <li data-d="1"><span>Monday</span><span>8:00 – 4:00</span></li>
+          <li data-d="2"><span>Tuesday</span><span>7:00 – 3:30</span></li>
+          <li data-d="3"><span>Wednesday</span><span>7:00 – 3:30</span></li>
+          <li data-d="4"><span>Thursday</span><span>7:00 – 3:30</span></li>
+          <li data-d="5"><span>Friday</span><span>8:00 – 12:00</span></li>
+          <li data-d="6"><span>Sat – Sun</span><span>Closed</span></li>
+        </ul>
+        <a class="phone" href="tel:+18124772122">(812) 477-2122</a>
+        <span class="addr">4952 Lincoln Ave, Evansville, IN 47715</span>
+      </aside>
+    </div>
+  </section>
+
+  <div class="tags" aria-label="What patients mention most">
+    <div class="tags-track">
+      <span>Friendly staff</span><span>Caring team</span><span>Attentive doctor</span><span>Thorough exams</span><span>Relaxing atmosphere</span><span>Explains every option</span>
+      <span>Friendly staff</span><span>Caring team</span><span>Attentive doctor</span><span>Thorough exams</span><span>Relaxing atmosphere</span><span>Explains every option</span>
+    </div>
+  </div>
+
+  <section id="care">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Everyday care, <em>done carefully.</em></h2>
+        <p>From routine cleanings to crowns and dentures, we look after every smile in your household under one roof.</p>
+      </div>
+      <div class="services reveal">
+        <article class="svc"><span class="num">01</span><h3>Cleanings &amp; exams</h3><p>Unhurried checkups with a hygienist who actually talks you through what they see.</p></article>
+        <article class="svc"><span class="num">02</span><h3>Crowns</h3><p>Restore a cracked or worn tooth so you can chew and smile with confidence again.</p></article>
+        <article class="svc"><span class="num">03</span><h3>Crown lengthening</h3><p>A gentle reshaping of the gumline that protects a tooth or evens out a gummy smile.</p></article>
+        <article class="svc"><span class="num">04</span><h3>Dentures</h3><p>Comfortable, natural-looking dentures fitted with care, and adjusted until they feel right.</p></article>
+        <article class="svc"><span class="num">05</span><h3>Whitening trays</h3><p>Custom-fit bleaching trays for a brighter smile you can whiten safely at home.</p></article>
+        <article class="svc"><span class="num">06</span><h3>Night guards</h3><p>Custom occlusal guards that protect your teeth from grinding and ease jaw tension.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="doctor" id="doctor">
+    <div class="wrap doc-grid">
+      <div class="portrait reveal" role="img" aria-label="Portrait placeholder for Dr. Dilger"></div>
+      <div class="reveal">
+        <span class="eyebrow">Meet your dentist</span>
+        <h2 style="margin-top:18px">Dr. Kenneth H. Dilger II, <em>DDS</em></h2>
+        <blockquote>Kind, gentle, and thorough: the words patients use most.</blockquote>
+        <p>Dr. Dilger is known for taking his time. Before any treatment, he walks you through what he found, what your options are, and what each one means for your schedule and your budget.</p>
+        <p>His team has built a reputation across Evansville for one thing above all: making people feel at ease in the chair.</p>
+        <div class="facts">
+          <div><b>4.9★</b>Google rating</div>
+          <div><b>145</b>patient reviews</div>
+          <div><b>53</b>mentions of “friendly staff”</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Neighbors <em>say it best.</em></h2>
+        <p>Real words from Google reviews of the practice.</p>
+      </div>
+      <div class="reviews reveal">
+        <article class="review"><span class="stars">★★★★★</span><p>“Super friendly staff, from the front desk to the hygienists.”</p><footer><span>Google review</span><span>Patient</span></footer></article>
+        <article class="review"><span class="stars">★★★★★</span><p>“After a thorough examination Dr. Dilger discussed my options for treatment.”</p><footer><span>Google review</span><span>Patient</span></footer></article>
+        <article class="review"><span class="stars">★★★★★</span><p>“Everyone there is so friendly, and the atmosphere is very relaxing.”</p><footer><span>Google review</span><span>Patient</span></footer></article>
+      </div>
+      <p class="g-note reveal">★★★★★ 4.9 average from 145 reviews on Google</p>
+    </div>
+  </section>
+
+  <section class="book" id="book">
+    <div class="wrap book-grid">
+      <div class="reveal">
+        <span class="eyebrow" style="color:#f3b896">New &amp; returning patients</span>
+        <h2 style="margin-top:18px">Request a visit <em>in a minute.</em></h2>
+        <p class="lead">Tell us a good time and we'll call you back to confirm. Prefer to talk now? Call <a href="tel:+18124772122" style="color:#fff">(812) 477-2122</a>.</p>
+        <ol class="steps">
+          <li>Send your request with your preferred day.</li>
+          <li>Our front desk calls to confirm your time.</li>
+          <li>Come in, relax, and we'll take it from there.</li>
+        </ol>
+      </div>
+      <form class="reveal" id="form" novalidate>
+        <label>First name<input name="first" required autocomplete="given-name"></label>
+        <label>Last name<input name="last" required autocomplete="family-name"></label>
+        <label>Phone<input name="phone" type="tel" required autocomplete="tel"></label>
+        <label>Email<input name="email" type="email" autocomplete="email"></label>
+        <label>Reason for visit
+          <select name="reason"><option>Cleaning &amp; exam</option><option>Tooth pain / emergency</option><option>Crown</option><option>Dentures</option><option>Whitening or night guard</option><option>Something else</option></select>
+        </label>
+        <label>Preferred day
+          <select name="day"><option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option><option>Friday morning</option><option>Any day</option></select>
+        </label>
+        <label class="full">Anything we should know?<textarea name="notes" placeholder="Optional"></textarea></label>
+        <button class="btn btn-pine" type="submit">Send request →</button>
+        <p class="form-note">Demo form: nothing is sent from this preview.</p>
+        <div class="thanks" id="thanks"><h3>Thank you!</h3><p>In the live site, this request would go straight to the front desk's inbox and they'd call you back to confirm.</p></div>
+      </form>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap visit-grid">
+      <div class="visit-info reveal">
+        <span class="eyebrow">Find us</span>
+        <h2 style="margin-top:18px">Easy to reach on the <em>east side.</em></h2>
+        <dl>
+          <div><dt>Address</dt><dd><a href="https://maps.google.com/?q=4952+Lincoln+Ave,+Evansville,+IN+47715" target="_blank" rel="noopener">4952 Lincoln Ave<br>Evansville, IN 47715</a></dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+18124772122">(812) 477-2122</a></dd></div>
+          <div><dt>Hours</dt><dd>Mon 8–4 · Tue–Thu 7–3:30 · Fri 8–12</dd></div>
+        </dl>
+      </div>
+      <div class="map reveal">
+        <iframe title="Map to the office"referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=4952%20Lincoln%20Ave%2C%20Evansville%2C%20IN%2047715&z=15&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap foot">
+    <span class="brand-name">Dr. Kenneth Dilger II<small>Family Dentistry · Evansville, IN</small></span>
+    <span>4952 Lincoln Ave, Evansville, IN 47715 · (812) 477-2122</span>
+    <span>Concept design by WiseTech</span>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-ghost" style="background:var(--paper)" href="tel:+18124772122">Call</a>
+  <a class="btn btn-pine" href="#book">Request a visit</a>
+</div>
+
+<script>
+  // Live open/closed status in the office's own time zone (Central)
+  (function(){
+    var sched={1:[8,16],2:[7,15.5],3:[7,15.5],4:[7,15.5],5:[8,12]};
+    var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+    var get=function(t){return (parts.find(function(p){return p.type===t})||{}).value};
+    var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(get('weekday'));
+    var now=(+get('hour')%24)+(+get('minute'))/60;
+    var row=document.querySelector('#hours li[data-d="'+(day===0?6:day)+'"]');
+    if(row) row.classList.add('today');
+    var h=sched[day], open=h&&now>=h[0]&&now<h[1];
+    document.getElementById('dot').classList.toggle('open',!!open);
+    var fmt=function(x){var hr=Math.floor(x),m=Math.round((x-hr)*60);return (hr%12||12)+(m?':'+String(m).padStart(2,'0'):'')+(hr<12?' AM':' PM')};
+    var msg;
+    if(open){msg='Open now · until '+fmt(h[1]);}
+    else{
+      for(var i=0;i<8;i++){var d=(day+i)%7,s=sched[d];if(s&&(i>0||now<s[0])){msg='Closed · opens '+(i===0?'today':i===1?'tomorrow':['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][d])+' '+fmt(s[0]);break;}}
+    }
+    document.getElementById('status').textContent=msg;
+  })();
+
+  // Scroll reveals
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+
+  // Demo form: validate, show thank-you, send nothing
+  document.getElementById('form').addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=e.target, ok=true;
+    ['first','last','phone'].forEach(function(n){var el=f.elements[n];var bad=!el.value.trim();el.style.borderColor=bad?'#c8643b':'';if(bad)ok=false;});
+    if(!ok) return;
+    [].forEach.call(f.children,function(c){if(c.id!=='thanks')c.style.display='none'});
+    document.getElementById('thanks').style.display='block';
+  });
+</script>
+</body>
+</html>
